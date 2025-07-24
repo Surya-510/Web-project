@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>tophire.com</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgba(177, 187, 219, 0.437);
+        }
+        .navbar{
+          background-color:darkgrey;
+        height: 100px;
+        margin-top: 5px;
+        position: sticky;
+        top: 0;
+        }
+        .navbar img{
+        margin-top: -120px;
+        }
+        ul{
+        padding-top: 30px;
+        }
+        .navbar li{
+        display: inline;
+        transition: 2 ease-in-out;
+        border-radius: 30px;
+        width: 70px;
+        height: 30px;
+        }
+        .l1{
+        font-size: 18px;
+        margin-top: 50px;
+        margin-left: 800px;
+        margin-bottom:-500px;
+        padding:20px;
+        background-color: blue;
+        color: white;
+        font-weight:bold;
+        border: 1px solid black;
+        }
+        .l1:hover{
+        background-color: rgb(203, 33, 229);
+        color: whitesmoke;          
+        }
+        .l2{
+        font-size: 18px;
+        margin-left: 150px;
+        margin-bottom:-500px;
+        padding: 20px;
+        border: 1px solid black;
+        font-weight: bold;
+        }
+        .l2:hover{
+        background-color: rgb(203, 33, 229);
+        color: whitesmoke;          
+        }
+        .l2 a{
+            text-decoration: none;
+            
+        }
+        .l3{
+        margin-left: 150px;
+        margin-bottom:-500px;
+        }
+        .l3 button{
+        font-size: 18px;
+        border-radius: 20px;
+        background: transparent;
+        padding: 10px;
+        width: 100px;
+        font-weight: bold;
+        }
+        .l3 button a{
+            text-decoration: none;
+            color: black;
+        }
+        .head1{
+            margin-left: 100px;
+            color:brown;
+        }
+        .main1{
+            width: 900px;
+            height: 400px;
+            border-radius: 50px;
+            margin-left: 300px;
+            background-color:rgb(50, 168, 82);
+        }
+        .main1 .i1{
+            margin-left: 50px;
+        }
+        .he1{
+            font-size: 40px;
+            color: white;
+            font-family: arial;
+            font-weight: bold;
+            word-spacing: 10px;
+            margin-left: 30px;
+            margin-top: -50px;
+           
+        }
+        .but1{
+            background-color: yellow;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 50px;
+            width: 300px;
+            padding: 10px;
+            margin-left: 50px;
+        }
+        .i2{
+            float: right;
+            margin-top: -200px;
+            margin-right:100px;
+        }
+        .i3{
+            float:right;
+            margin-top: -100px;
+            margin-right:100px;
+        }
+        .container{
+            display: grid;
+           grid-template-columns: repeat(1,1fr);
+            grid-gap:70px;
+            padding: 10px;
+            background-color:rgb(255, 255, 255);
+        }
+        .container1{
+            width: 1400px;
+            height:500px;
+            border: 1px solid black;
+            border-radius: 40px;
+            margin-left: 35px;
+        }
+        .container2{
+            width: 1400px;
+            height:500px;
+            border: 1px solid black;
+            border-radius: 40px;
+            margin-left: 35px;
+        }
+        .container3{
+            width: 1400px;
+            height:500px;
+            border: 1px solid black;
+            border-radius: 40px;
+            margin-left: 35px;
+        }
+        .container4{
+            width: 1400px;
+            height:500px;
+            border: 1px solid black;
+            border-radius: 40px;
+            margin-left: 35px;
+        }
+        .container5{
+            width: 1400px;
+            height:500px;
+            border: 1px solid black;
+            border-radius: 40px;
+            margin-left: 35px;
+        }
+        .container6{
+            width: 1400px;
+            height:500px;
+            border: 1px solid black;
+            border-radius: 40px;
+            margin-left: 35px;
+        }
+
+        /* .container1 */
+        .se1{
+            margin-left: 50px;
+            margin-top: 44px;
+        }
+        .sp1 i{
+            font-size: 50px;
+            margin-left: 700px;
+            display: grid;
+            margin-top: -150px;
+        }
+        .ch1{
+            font-size:20px;
+            margin-left: 800px;
+            margin-top: -35px;
+            
+        }
+        .ch2{
+            font-size: 20px;
+            margin-left: 800px;
+            margin-top: 75px;
+        }
+        .ch3{
+            font-size: 20px;
+            margin-left: 800px;
+            margin-top:80px;
+        }
+        /* .container2 */
+        .se2{
+            margin-left: 50px;
+            margin-top: 44px;
+        }
+        .sp2 i{
+            font-size: 50px;
+            margin-left: 700px;
+            display: grid;
+            margin-top: -150px;
+        }
+        .ch4{
+            font-size:20px;
+            margin-left: 800px;
+            margin-top: -35px;
+            
+        }
+        .ch5{
+            font-size: 20px;
+            margin-left: 800px;
+            margin-top: 75px;
+        }
+        .ch6{
+            font-size: 20px;
+            margin-left: 800px;
+            margin-top:80px;
+        }
+        /* .container3 */
+        .se3{
+            margin-left: 50px;
+            margin-top: 44px;
+        }
+        .sp3 i{
+            font-size: 50px;
+            margin-left: 700px;
+            display: grid;
+            margin-top: -150px;
+        }
+        .ch7{
+            font-size:20px;
+            margin-left: 800px;
+            margin-top: -35px;
+            
+        }
+        .ch8{
+            font-size: 20px;
+            margin-left: 800px;
+            margin-top: 75px;
+        }
+        .ch9{
+            font-size: 20px;
+            margin-left: 800px;
+            margin-top:80px;
+        }
+         /* .container4 */
+         .se4{
+            margin-left: 50px;
+            margin-top: 44px;
+        }
+        .sp4 i{
+            font-size: 50px;
+            margin-left: 700px;
+            display: grid;
+            margin-top: -150px;
+        }
+        .ch10{
+            font-size:20px;
+            margin-left: 800px;
+            margin-top: -35px;
+            
+        }
+        .ch11{
+            font-size: 20px;
+            margin-left: 800px;
+            margin-top: 75px;
+        }
+        .ch12{
+            font-size: 20px;
+            margin-left: 800px;
+            margin-top:80px;
+        }
+         /* .container5 */
+         .se5{
+            margin-left: 50px;
+            margin-top: 44px;
+        }
+        .sp5 i{
+            font-size: 50px;
+            margin-left: 700px;
+            display: grid;
+            margin-top: -150px;
+        }
+        .ch13{
+            font-size:20px;
+            margin-left: 800px;
+            margin-top: -35px;
+            
+        }
+        .ch14{
+            font-size: 20px;
+            margin-left: 800px;
+            margin-top: 75px;
+        }
+        .ch15{
+            font-size: 20px;
+            margin-left: 800px;
+            margin-top:80px;
+        }
+         /* .container6 */
+         .se6{
+            margin-left: 50px;
+            margin-top: 44px;
+        }
+        .sp6 i{
+            font-size: 50px;
+            margin-left: 700px;
+            display: grid;
+            margin-top: -150px;
+        }
+        .ch16{
+            font-size:20px;
+            margin-left: 800px;
+            margin-top: -35px;
+            
+        }
+        .ch17{
+            font-size: 20px;
+            margin-left: 800px;
+            margin-top: 75px;
+        }
+        .ch18{
+            font-size: 20px;
+            margin-left: 800px;
+            margin-top:80px;
+        }
+        .sub{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 10px;
+    }
+    .contact{
+        width: 100vw;
+        height: 60vh;
+        background-color: rgb(200, 210, 239);
+    }
+    .q1{
+        margin-left:300px ;
+        font-size: 45px;
+        font-weight: bold
+    }
+    .sp{
+        padding: 350px;
+        font-size: 30px;
+    }
+    .sub1{
+        margin-left: 200px;
+    }
+    .ly1{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .tr{
+        font-size: 20px;
+        color:rgb(168, 103, 103)
+    }
+    .tr:hover{
+        color: black;
+
+    }
+    .sub2{
+        margin-left: 100px;
+    }
+    .ly2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .tr1{
+        font-size: 20px;
+        color:rgb(168, 103, 103)
+    }
+    .tr1:hover{
+        color: black;
+    }
+    .sub3{
+        margin-left: 50px;
+    }
+    .ly3{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .tr2{
+        font-size: 20px;
+        color:rgb(168, 103, 103)
+    }
+    .tr2:hover{
+        color: black;
+    }
+
+
+
+
+        </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+        <ul>
+            <li class="l1">Home</li>
+            <li class="l2"> <a href="about.html">About</a></li>
+            <li class="l3"><button><a href="login.html">LOG IN</a></button></li>
+        </ul>
+    </nav>
+    <img src="company bg.png" alt="" width="225px" height="225px">
+    </div>
+    <br><br><br>
+    <div class="main">
+        <h1 class="head1"><u>BANKING AND FINANCE EXPLORES THE DYNAMIC,FAST-PACED WORLD OF MONEY,SHARES,CREDIT AND INVESTMENTS.</u></h1>
+    </div>
+    <br><br><br><br>
+    <div class="main1">
+        <img src="logo-bg.png" alt="" class="i1" width="200px" height="200px">
+        <h2 class="he1">India's biggest skill contest to <br>help you stand out to recruiters</h2>
+        <button class="but1">Tell me more</button>
+        <img src="extra.jpg" alt="" class="i2" width="100px" height="100px">
+        <br>
+        <img src="bag.jpg" alt="" class="i3" width="100px" height="100px">
+    </div>
+    <br><br><br><br>
+    <div class="container">
+        <div class="container1">
+            <a href="https://www.bankofamerica.com/"><img src="americabank.png" alt="" class="se1" width="500px" height="400px"></a>
+            <span class="sp1">
+                <i class="fa-solid fa-briefcase"></i>
+                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-comment"></i>
+                <h4 class="ch1">Global leader in wealth management, corporate and investment banking </h4>
+                <h4 class="ch2">North Tryon Street, Charlotte.</h4>              
+                <h4 class="ch3">5-10 Yrs</h4>
+            </span>
+        </div>
+        <div class="container2">
+            <a href="https://licindia.in/?gad_source=1&gclid=CjwKCAjwl6-3BhBWEiwApN6_kjiJ2kJeHcStkoqEGUC_8IVxYqQydn0SWF9ZkhJIf4PE1Syy7W9cahoC4MAQAvD_BwE"><img src="licbank.jpg" alt="" class="se2" width="500px" height="400px"></a>
+            <span class="sp2">
+                <i class="fa-solid fa-briefcase"></i>
+                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-comment"></i>
+                <h4 class="ch4">Invest in global financial markets and different government securities after gathering funds from people</h4>
+                <h4 class="ch5"> Yogakshema Building, Jeevan Bima Marg.</h4>              
+                <h4 class="ch6">5-10 Yrs</h4>
+            </span>
+        </div>
+        <div class="container3">
+            <a href="https://www.capitalone.com/"><img src="capitalbank.png" alt="" class="se3" width="500px" height="400px"></a>
+            <span class="sp3">
+                <i class="fa-solid fa-briefcase"></i>
+                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-comment"></i>
+                <h4 class="ch7">Issuing cards to consumers in Canada, the United Kingdom, and the United States</h4>
+                <h4 class="ch8">McLean, Virginia .</h4>              
+                <h4 class="ch9">5-10 Yrs</h4>
+            </span>
+        </div>
+        <div class="container4">
+            <a href="https://www.adityabirla.com/"><img src="adhibank.webp" alt="" class="se4" width="500px" height="400px"></a>
+            <span class="sp4">
+                <i class="fa-solid fa-briefcase"></i>
+                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-comment"></i>
+                <h4 class="ch10">A comprehensive suite of financial solutions across Loans, Investments, Insurance</h4>
+                <h4 class="ch11"> Mumbai, India.</h4>              
+                <h4 class="ch12">5-10 Yrs</h4>
+            </span>
+        </div>
+        <div class="container5">
+            <a href="https://www.fullertonfinancial.com/"><img src="fulerbank.png" alt="" class="se5" width="500px" height="400px"></a>
+            <span class="sp5">
+                <i class="fa-solid fa-briefcase"></i>
+                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-comment"></i>
+                <h4 class="ch13">An independently managed investor in financial and related services</h4>
+                <h4 class="ch14">Powai, Mumbai.</h4>              
+                <h4 class="ch15">5-10 Yrs</h4>
+            </span>
+        </div>
+        <div class="container6">
+             <a href="https://www.piramalfinance.com/"><img src="dhflbank.png" alt="" class="se6" width="500px" height="400px"></a>
+            <span class="sp6">
+                <i class="fa-solid fa-briefcase"></i>
+                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-comment"></i>
+                <h4 class="ch16">Provided housing loans in India</h4>
+                <h4 class="ch17">Mumbai .</h4>              
+                <h4 class="ch18">5-10 Yrs</h4>
+            </span></div>
+    </div>
+    <br><br><br>
+    <div class="contact">
+        <h2 class="q1">Connect with us</h2>
+        <br><br>
+        <span class="sp">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        </span>
+    <br><br>
+    <br><br><br>
+    <div class="sub">
+        <div class="sub1">
+            <h3 class="ly1">LEARN MORE</h3>
+            <ul class="tr">
+                <li>Announcements</li>
+                <li>Info Edge Stock</li>
+                <li>Our Business</li>
+                <li>Press Releases</li>
+            </ul>
+        </div>
+        <div class="sub2">
+            <h3 class="ly2">Infoedge Stock</h3>
+            <ul class="tr1">
+                <li>7729.05 <span>  +58 <br>0.76% change</span></li>
+                <li>Market opened at        7825.00</li>
+                <li>Daily High              7830.00</li>
+                <li>Daily Low               7692.80</li>
+            </ul>
+        </div>
+        <div class="sub3">
+            <h3 class="ly3">Press Releases</h3>
+            <ul class="tr2">
+                <li>Info edge limited announce Q3 FY16 results</li>
+                <li>Info edge limited announces Q2 results</li>
+                <li>Info edge limited announces Q3 FY21 results</li>
+                <li>Info edge limited announces Q2 FY21 results</li>
+            </ul>
+
+        </div>
+    </div>
+
+    
+</body>
+</html>

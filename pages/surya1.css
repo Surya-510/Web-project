@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#home{
+    margin-left: 400px;
+    margin-top: -250px;
+}
+
+#about{
+    margin-left: 450px;
+}
+
+#login{
+    margin-left: 500px;
+}

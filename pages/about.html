@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
+    <title>tophire.com</title>
+    <style>
+       *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+    body{
+    background-color: rgba(177, 187, 219, 0.437);
+    }
+    .navbar{
+     background-color:darkgrey;
+    height: 100px;
+    margin-top: 5px;
+    position: sticky;
+    top: 0;
+    }
+    .navbar img{
+    margin-top: -120px;
+    }
+    ul{
+    padding-top: 30px;
+    }
+    .navbar li{
+    display: inline;
+    transition: 2 ease-in-out;
+    border-radius: 30px;
+    width: 70px;
+    height: 30px;
+    }
+    .l1{
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 800px;
+    margin-bottom:-500px;
+    padding:20px;
+    font-weight:bold;
+    border: 1px solid black;
+    }
+    .l1:hover{
+    background-color: rgb(203, 33, 229);
+    color: whitesmoke;          
+    }
+    .l1 a{
+        text-decoration: none;
+    }
+    .l2{
+    font-size: 18px;
+    margin-left: 150px;
+    margin-bottom:-500px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+    font-weight: bold;
+    }
+    .l2:hover{
+    background-color: rgb(203, 33, 229);
+    color: whitesmoke;          
+    }
+    .l3{
+    margin-left: 150px;
+    margin-bottom:-500px;
+    }
+    .l3 button{
+    font-size: 18px;
+    border-radius: 20px;
+    background: transparent;
+    padding: 10px;
+    width: 100px;
+    font-weight: bold;
+    }
+    .l3 button a{
+        text-decoration: none;
+        color: black;
+    }
+    .main .head1{
+        color: rgb(255, 255, 255);
+        margin-top: 50px;
+        font-family:sans-serif;
+        font-weight: bold;
+        text-shadow: 0px 0px 10px red,
+                     0px 0px 20px red, 0px 0px 40px red, 0px 0px 80px red;
+        margin-left: 300px;
+        border-radius: 2px solid black;
+    }
+    .main .para1{
+        width: 900px;
+        font-size: 30px;
+        line-height:40px;
+        font-style: italic;
+        font-weight: bold;
+        word-spacing: 10px;
+        margin-left: 30px;
+    }
+    .main .i1{
+        float: right;
+        margin-top: -400px;
+       
+    }
+    .main2 .i2{
+        float: left;
+    }
+    .main2 .head2{
+        color: rgb(255, 255, 255);
+        margin-top: 50px;
+        font-family:sans-serif;
+        font-weight: bold;
+        text-shadow: 0px 0px 10px cyan,
+                     0px 0px 20px cyan, 0px 0px 40px cyan, 0px 0px 80px cyan;
+        margin-left: 600px;
+        border-radius: 2px solid black;
+    }
+    .main2 .para2{
+        width: 1500px;
+        font-size: 30px;
+        line-height:40px;
+        font-style: italic;
+        font-weight: bold;
+        word-spacing: 10px;
+        margin-left: 30px;
+    }
+    .main3 .head3{
+        color: rgb(255, 255, 255);
+        margin-top: 50px;
+        font-family:sans-serif;
+        font-weight: bold;
+        text-shadow: 0px 0px 10px purple,
+                     0px 0px 20px purple, 0px 0px 40px purple, 0px 0px 80px purple;
+        margin-left: 300px;
+        border-radius: 2px solid black;
+    }
+    .main3 .para3{
+        width: 900px;
+        font-size: 30px;
+        line-height:40px;
+        font-style: italic;
+        font-weight: bold;
+        word-spacing: 10px;
+        margin-left: 30px;
+    }
+    .main3 .i3{
+        float: right;
+        margin-top: -400px;
+       
+    }
+    .main4 .i4{
+        float: left;
+    }
+    .main4 .head4{
+        color: rgb(255, 255, 255);
+        margin-top: 50px;
+        font-family:sans-serif;
+        font-weight: bold;
+        text-shadow: 0px 0px 10px yellow,
+                     0px 0px 20px yellow, 0px 0px 40px yellow, 0px 0px 80px yellow;
+        margin-left: 800px;
+        border-radius: 2px solid black;
+    }
+    .main4 .para4{
+        width: 1500px;
+        font-size: 30px;
+        line-height:40px;
+        font-style: italic;
+        font-weight: bold;
+        word-spacing: 10px;
+        margin-left: 30px;
+    }
+    .main5 .head5{
+        color: rgb(255, 255, 255);
+        margin-top: 50px;
+        font-family:sans-serif;
+        font-weight: bold;
+        text-shadow: 0px 0px 10px blue,
+                     0px 0px 20px blue, 0px 0px 40px blue, 0px 0px 80px blue;
+        margin-left: 300px;
+        border-radius: 2px solid black;
+    }
+    .main5 .para5{
+        width: 900px;
+        font-size: 30px;
+        line-height:40px;
+        font-style: italic;
+        font-weight: bold;
+        word-spacing: 10px;
+        margin-left: 30px;
+    }
+    .main5 .i5{
+        float: right;
+        margin-top: -150px;
+       
+    }
+
+
+
+    .container{
+        max-width: 900px;
+        margin: 0px auto;
+        background-color: linear-gradient(90deg,pink,wheat);
+    }
+
+    .apply-box{
+        max-width: 600px;
+        padding: 20px;
+        margin: 0px auto;
+        margin-top: 50px;
+        border: 1px solid grey;
+        box-shadow: 0px 4px 30px rgba(0,0,0,0.1);
+        border-radius: 40px;
+    }
+    .title-small{
+        font-size: 20px;
+    }
+
+    .form-container{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        gap: 20px;
+
+    }
+      .form-control{
+        display: flex;
+        flex-direction: column;
+    }
+    label{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    input,select,textarea{
+        padding: 6px 10px;
+        border: 1px solid white;
+        border-radius: 4px;
+        font-size: 15px;
+    }
+    input:focus{
+        outline-color: royalblue;
+    }
+    .button-container{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+    .but5{
+        background-color: royalblue;
+        border: transparent solid 2px;
+        color: white;
+        border-radius: 20px;
+        padding: 10px;
+
+    }
+    .but5:hover{
+        background-color: red;
+        border: 2px solid royalblue;
+        transition: 0.3s ease-out;
+        cursor: pointer;
+
+    }
+    .textarea-control{
+        grid-column: 1/span 2;
+
+    }
+    .textarea-control textarea{
+        width: 100%;
+
+    }
+    .last{
+        text-align: end;
+        background: linear-gradient(180deg,blue,#ff00c3);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .ir{
+        float: right;
+        margin-right:90px;
+    }
+
+    </style>
+
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+        <ul>
+            <li class="l1"> <a href="home.html">Home </a></li>
+            <li class="l2">About</li>
+            <li class="l3"><button><a href="login.html">LOG IN</a></button></li>
+        </ul>
+    </nav>
+    <img src="company bg.png" alt="" width="225px" height="225px">
+    </div>
+    <div class="main">
+        <h1 class="head1">KNOW OUR WEBSITE HERE</h1>
+        <br><br><br><br>
+        <p class="para1">Welcome to Tophire Company, the premiere online platform designed to connect job seekers with top employers across diverse in the industries. Our mission is to make job searching and hiring seamless and efficient whether you are an individual looking for your next career oppurtunity or a company searching for a perfect candidate.
+        </p>
+        <img src="company bg.png" alt="" class="i1" width="600px" height="600px">
+    </div>
+    <br><br><hr><br><br>
+    <div class="main2">
+        <img src="job_seeker-removebg.png" alt="" class="i2" width="600px" height="600px">
+        <h1 class="head2">FOR JOB SEEKERS</h1>
+        <br><br><br><br>
+        <p class="para2"> At Tophire company, we understand the challenges of finding right job. Our platform offers an extensive database of job listing that you can easily browse and filter by location, industry and job type. We provide powerful tool to help you create a stand-out resume, set-up personalized job alerts and received tailored career advice. With our advanced matching algorithm, we connect you to the most relevant job opportunities based on your skills and experience, ensuring that you find a role that fits your career goals.
+        </p>
+    </div>
+    <br><br><hr><br><br>
+    <div class="main3">
+        <h1 class="head3">FOR EMPLOYERS</h1>
+        <br><br><br><br>
+        <p class="para3">Finding the right talent is crucial to your company's sucess. Tophire company simplifies the hiring process by allowing you to post job openings, manage applications, and access a broad pool of qualified candidates. Our intuitive platform provides features for screening resumes, scheduling interviews, and enhancing your employer brand to attract top talent. whether you're hiring for a single position are building a team, our tools and insights help you streamline your recruitment efforts.</p>
+        <img src="employer-removebg.png" alt="" class="i3" width="600px" height="500px">
+    </div>
+    <br><br><hr><br><br>
+    <div class="main4">
+        <img src="job-removebg.png" alt="" class="i4" width="600px" height="500px">
+        <h1 class="head4">WHAT SETS US APART?</h1>
+        <br><br><br><br>
+        <p class="para4"> Our commitment to innovation and user experience sets us apart. Tophire company features a user-friendly design that makes job searching and recruitment easy and efficient. we offer a mobile-friendly experience, so you can access job opportunities or manae applications on the go. additionally, our blog and resources center provide valuable insights into industry trends and career development.</p>
+    </div>
+    <br><br><hr><br><br>
+    <div class="main5">
+        <img src="join.png" alt="" class="i5" width="600px" height="600px">
+        <h1 class="head5">JOIN US</h1>
+        <br><br><br><br>
+        <p class="para5">Discover the difference Tophire company. Whether you are looking to advance your career or find the perfect hire, our platform is here to support your goals. Sign Up today and take the next step towards a brighter future.
+        </p>
+    </div>
+    <br><br><hr><br><br>
+    <br>
+    <div class="container">
+        <div class="apply-box">
+            <h1>Job Application <span class="title">(Online)</span></h1>
+            <form action="">
+                <div class="form-container">
+                    <div class="form-control">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name"
+                        placeholder="Enter your first Name">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="first-name">Last Name</label>
+                        <input type="text" id="first-name" name="first-name"
+                        placeholder="Enter your last-name">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="first-name">Email</label>
+                        <input type="email" id="first-name" name="first-name"
+                        placeholder="Enter Email">
+                    </div>
+
+
+                    <div class="form-control">
+                        <label for="job-role">Job Role</label>
+                        <select name="job-role" id="job-role">
+                            <option value="">Select job role</option>
+                           <option value="frontend Developer">Frontend Developer</option>
+                           <option value="frontend Developer">UI/UX Designer</option>
+                           <option value="frontend Developer">Mobile/APP Developer</option>
+                           <option value="frontend Developer">Automation Test Engineer</option>
+                           <option value="frontend Developer">Business Analyst</option>
+                           <option value="frontend Developer">Product Manager</option>
+                           <option value="frontend Developer">Research Associate Engineer</option>
+                           <option value="frontend Developer">Technical Lead</option>
+                           <option value="frontend Developer">Data Scientist</option>
+                           <option value="frontend Developer">Functional Consultant</option>
+                        </select>
+                    </div>
+
+                        <div class="form-control">
+                            <label for="address">Address</label>
+                            <textarea name="address" id="" cols="30"  rows="10" placeholder="Enter Full Address"></textarea>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="city">City</label>
+                            <input type="text" id="first-name" name="first-name"
+                            placeholder="Enter City">
+                        </div>
+
+                        <div class="form-control">
+                            <label for="pincode">Pincode</label>
+                            <input type="number" id="first-name" name="first-name"
+                            placeholder="Enter Pincode">
+                        </div>
+
+                        <div class="form-control">
+                            <label for="first-name">Date</label>
+                            <input type="date" id="first-name" name="first-name">
+                        </div>
+                        <div class="form-control">
+                            <label for="first-name">upload Your CV</label>
+                            <input type="file" id="first-name" name="first-name">
+                        </div>
+
+                        <div class="button-container">
+                            <button class="but5" type="submit">Apply Now</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div >
+        <h1 class="last">LET'S CREATE YOUR OWN SHINE....</h1>
+        <br><br>
+        <img src="extra1.jpg" alt="" class="ir" width="300px" height="300px">
+    </div>
+
+   
+</body>
+</html>

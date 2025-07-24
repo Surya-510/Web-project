@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tophire.com</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>*{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgba(177, 187, 219, 0.437);
+    }
+    .navbar{
+    background-color:darkgrey;
+    height:100px;
+    margin-top: 5px;
+    position: sticky;
+    top: 0;
+    }
+    .navbar img{
+    margin-top: -120px;
+    }
+    ul{
+    padding-top: 30px;
+    }
+    .navbar li{
+    display: inline;
+    transition: 2 ease-in-out;
+    border-radius: 30px;
+    width: 70px;
+    height: 30px;
+    }
+    .l1{
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 800px;
+    margin-bottom:-500px;
+    padding:20px;
+    background-color: blue;
+    color: white;
+    font-weight:bold;
+    border: 1px solid black;
+    }
+    .l1:hover{
+    background-color: rgb(203, 33, 229);
+    color: whitesmoke;          
+    }
+    .l2{
+    font-size: 18px;
+    margin-left: 150px;
+    margin-bottom:-500px;
+    padding: 20px;
+    border: 1px solid black;
+    font-weight: bold;
+    }
+    .l2:hover{
+    background-color: rgb(203, 33, 229);
+    color: whitesmoke;          
+    }
+    .l2 a{
+        text-decoration: none;
+        
+    }
+    .l3{
+    margin-left: 150px;
+    margin-bottom:-500px;
+    }
+    .l3 button{
+    font-size: 18px;
+    border-radius: 20px;
+    background: transparent;
+    padding: 10px;
+    width: 100px;
+    font-weight: bold;
+    }
+    .l3 button a{
+        text-decoration: none;
+        color: black;
+    }
+    .container{
+    background: url(insert.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100vw;
+    height:1000px;
+    margin: 15px 0;
+    }
+    .container input{
+    width: 300px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(10, 10, 10);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    padding: 20px 45px 20px 20px;
+    margin-left: 580px;
+    margin-top: 50px;
+    
+    }
+    .container input::placeholder{
+    color:rgb(0, 0, 0);
+    }
+    .container i{
+    position: absolute;
+    color: rgb(8, 8, 8);
+    left:840px;
+    top:260px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: grab;
+    }
+    .container .kr{
+        font-size:70px;
+        color:whitesmoke;
+        font-family:serif;
+        margin-top: 60px;
+        margin-left: 400px;
+    }
+    .content .img1{
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+    .content .para1{
+          margin-left: 700px;
+          margin-top:-340px;
+          width: 800px;
+          letter-spacing:1px;
+          font-size: 30px;
+          line-height: 40px;
+    }
+    .content .but1{
+        border-color: black;
+        background-color:lightskyblue;
+        padding: 10px;
+        width: 250px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 20px;
+        margin-left: 900px;
+        margin-top: 30px;
+    }
+    .ads{
+        width:50vw;
+        height:65vh;
+        background-image: url(gradient\ bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 40px;
+        margin-left: 400px;
+    }
+    .ads img{
+        border-radius: 10px;
+    }
+    .head1{
+        color: rgb(34, 194, 82);
+        border-radius: 30px;
+        font-size: 30px;
+        font-family: sans-serif;
+        margin-left: 100px;
+    }
+    .para0{
+        font-size:20px;
+        margin-left: 70px;
+        letter-spacing: 2px;
+        line-height:30px;
+        color: black;
+    }
+    .adsbut{
+        color: white;
+        background-color: blue;
+        width:150px;
+        padding: 10px;
+        border-radius: 30px;
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+    .ads .imgx{
+        float: right;
+        margin-top: -200px;
+        margin-right:50px;
+    }
+    .ads .img2{
+        float: right;
+        margin-right:80px;
+        margin-top: -50px;
+    }
+    .wrap{
+        font-size: 50px;
+        text-align: center;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 10px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .main115{
+        background-color: rgb(255, 255, 255);
+        border-radius: 40px;
+        border: 1px solid rgb(142, 62, 62);
+        height: 70vh;
+    }
+    .main125{
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(142, 62, 62);
+        height: 70vh;
+        border-radius: 40px;
+    }
+    .main135{
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(142, 62, 62);
+        height: 70vh;
+        border-radius: 40px;
+    }
+    .main145{
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(142, 62, 62);
+        height: 70vh;
+        border-radius: 40px;
+    }
+    .main155{
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(142, 62, 62);
+        height: 70vh;
+        border-radius: 40px;
+    }
+    .main165{
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(142, 62, 62);
+        height: 70vh;
+        border-radius: 40px;
+    }
+    /* .main115 */
+    .mnc{
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 40px;
+        background-image: url(mnc);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:40vh;
+        width:30vw;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .he1{
+        font-size: 50px;
+        margin-top: 300px;
+        margin-left: 150px;
+        color: brown;
+    }
+    .he1 a{
+        text-decoration: none;
+        color: brown;
+    }
+    .pa1{
+        font-size: 30px;
+        margin-left: 130px;
+        color: brown;
+    }
+    /* .main125 */
+    .marketing{
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 40px;
+        background-image: url(marketing.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:40vh;
+        width:30vw;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .he2{
+        font-size: 50px;
+        margin-top: 300px;
+        margin-left: 150px;
+        color: brown;
+    }
+    .he2 a{
+        text-decoration: none;
+        color: brown;
+    }
+    .pa2{
+        font-size: 30px;
+        margin-left: 180px;
+        color: brown;
+    }
+    /* .main135 */
+    .software{
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 40px;
+        background-image: url(software);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:40vh;
+        width:30vw;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .he3{
+        font-size: 50px;
+        margin-top: 300px;
+        margin-left: 80px;
+        color: brown;
+    }
+    .he3 a{
+        text-decoration: none;
+        color: brown;
+    }
+    .pa3{
+        font-size: 30px;
+        margin-left: 160px;
+        color: brown;
+    }
+    /* .main145 */
+    .startup{
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 40px;
+        background-image: url(startup.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:40vh;
+        width:30vw;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .he4{
+        font-size: 50px;
+        margin-top: 300px;
+        margin-left: 150px;
+        color: brown;
+    }
+    .he4 a{
+        text-decoration: none;
+        color: brown;
+    }
+    .pa4{
+        font-size: 30px;
+        margin-left: 150px;
+        color: brown;
+    }
+    /* .main155 */
+    .banking{
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 40px;
+        background-image: url(banking.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:40vh;
+        width:30vw;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .he5{
+        font-size: 50px;
+        margin-top: 300px;
+        margin-left: 10px;
+        color: brown;
+    }
+    .he5 a{
+        text-decoration: none;
+        color: brown;
+    }
+    .pa5{
+        font-size: 30px;
+        margin-left: 130px;
+        color: brown;
+    }
+    /* .main165 */
+    .fresher{
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 40px;
+        background-image: url(fresher.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:40vh;
+        width:30vw;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .he6{
+        font-size: 50px;
+        margin-top: 300px;
+        margin-left: 150px;
+        color: brown;
+    }
+    .he6 a{
+        text-decoration: none;
+        color: brown;
+    }
+    .pa6{
+        font-size: 30px;
+        margin-left: 150px;
+        color: brown;
+    }
+    .rel1{
+        color: rgb(1, 1, 1);
+        font-size: 60px;
+        margin-left: 150px;
+    }
+    .job{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        line-height: 60px;
+    }
+    .jo110{
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 250px;
+        text-align: center;
+        margin-left: 70px;
+    }
+    .jo210{
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 250px;
+        text-align: center;
+        margin-left: 30px;
+    }
+    .jo310{
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 250px;
+        text-align: center;
+    }
+    .jo410{
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 250px;
+        text-align: center; 
+    }
+    .jo510{
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 300px;
+        text-align: center;
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    .jo610{
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 280px;
+        text-align: center;
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    .jo710{
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 250px;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 10px;
+    }.jo810{
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 250px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .jo910{
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 250px;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 70px;
+    }
+    .jo13{
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 250px;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+    .jo23{
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 250px;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    .jo33{
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 250px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .contact{
+        width: 100vw;
+        height: 60vh;
+        background-color: rgb(200, 210, 239);
+    }
+    .q1{
+        margin-left:300px ;
+        font-size: 45px;
+        font-weight: bold
+    }
+    .sp{
+        padding: 350px;
+        font-size: 30px;
+    }
+    /* footer */
+    .sub{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 10px;
+    }
+    .sub1{
+        margin-left: 200px;
+    }
+    .ly1{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .tr{
+        font-size: 20px;
+        color:rgb(168, 103, 103)
+    }
+    .tr:hover{
+        color: black;
+
+    }
+    .sub2{
+        margin-left: 100px;
+    }
+    .ly2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .tr1{
+        font-size: 20px;
+        color:rgb(168, 103, 103)
+    }
+    .tr1:hover{
+        color: black;
+    }
+    .sub3{
+        margin-left: 50px;
+    }
+    .ly3{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .tr2{
+        font-size: 20px;
+        color:rgb(168, 103, 103)
+    }
+    .tr2:hover{
+        color: black;
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+        <ul>
+            <li class="l1">Home</li>
+            <li class="l2"> <a href="about.html">About</a></li>
+            <li class="l3"><button><a href="login.html">LOG IN</a></button></li>
+        </ul>
+    </nav>
+    <img src="company bg.png" alt="" width="225px" height="225px">
+    </div>
+    <div class="container">
+        <marquee class="ms" behavior="" direction="">
+            <img src="cisco.jpg" alt="" width="50vw" height="50vh">
+            <img src="hcl.jpg" alt="" width="50vw" height="50vh">
+            <img src="microsoft.jpg" alt="" width="50vw" height="50vh">
+            <img src="mnc" alt="" width="50vw" height="50vh">
+            <img src="accenture" alt="" width="50vw" height="50vh">
+            <img src="apple.jpg" alt="" width="50vw" height="50vh">
+            <img src="google.jpg" alt="" width="50vw" height="50vh">
+            <img src="software" alt="" width="50vw" height="50vh">
+            <img src="tcs logo.jpg" alt="" width="50vw" height="50vh">
+            <img src="microsoft.jpg" alt="" width="50vw" height="50vh">
+            <img src="mnc" alt="" width="50vw" height="50vh">
+            <img src="google.jpg" alt="" width="50vw" height="50vh">
+            <img src="fulerbank.png" alt="" width="50vw" height="50vh">
+            <img src="ipresmark.png" alt="" width="50vw" height="50vh">
+            <img src="jujufresh.png" alt="" width="50vw" height="50vh">
+            <img src="justfresh.png" alt="" width="50vw" height="50vh">
+            <img src="infosoft.png" alt="" width="50vw" height="50vh">
+            <img src="cognisoft.jpg" alt="" width="50vw" height="50vh">
+            <img src="olxfresh.png" alt="" width="50vw" height="50vh">
+            <img src="rapidstart.jpg" alt="" width="50vw" height="50vh">
+            <img src="microsoft.jpg" alt="" width="50vw" height="50vh">
+            <img src="socialmark.jpg" alt="" width="50vw" height="50vh">
+            <img src="wiprosoft.png" alt="" width="50vw" height="50vh">
+            <img src="zohosoft.png" alt="" width="50vw" height="50vh">
+            <img src="watconmark.png" alt="" width="50vw" height="50vh">
+            <img src="adhibank.webp" alt="" width="50vw" height="50vh">
+            <img src="techmark.png" alt="" width="50vw" height="50vh">
+            <img src="adhibank.webp" alt="" width="50vw" height="50vh">
+            </marquee>
+        <input type="search" placeholder="Search">
+        <i class="fa-duotone fa-solid fa-magnifying-glass"></i>
+        <br>
+        <h2 class="kr">Unlock your Future:  <br> Connect, Apply and Succeed</h2>
+    </div>
+    <div class="content">
+        <img  class="img1" src="first img 2.png" alt="" width="500px" height="500px">
+        <p class="para1">Top hire company is a dynamic leader in job providing, dedicated to refer the companies recuritements of jobs and . Established in 2024, we have grown into a [size or type of company, e.g., "global technology firm" or "community-focused nonprofit"]   </p>
+        <button class="but1">View More</button>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div class="ads">
+        <marquee class="ms" behavior="" direction="">
+        <img src="cisco.jpg" alt="" width="50vw" height="50vh">
+        <img src="hcl.jpg" alt="" width="50vw" height="50vh">
+        <img src="microsoft.jpg" alt="" width="50vw" height="50vh">
+        <img src="mnc" alt="" width="50vw" height="50vh">
+        <img src="accenture" alt="" width="50vw" height="50vh">
+        <img src="apple.jpg" alt="" width="50vw" height="50vh">
+        <img src="google.jpg" alt="" width="50vw" height="50vh">
+        <img src="software" alt="" width="50vw" height="50vh">
+        <img src="tcs logo.jpg" alt="" width="50vw" height="50vh">
+        <img src="cisco.jpg" alt="" width="50vw" height="50vh">
+        <img src="hcl.jpg" alt="" width="50vw" height="50vh">
+        <img src="microsoft.jpg" alt="" width="50vw" height="50vh">
+        <img src="mnc" alt="" width="50vw" height="50vh">
+        <img src="accenture" alt="" width="50vw" height="50vh">
+        <img src="apple.jpg" alt="" width="50vw" height="50vh">
+        <img src="google.jpg" alt="" width="50vw" height="50vh">
+        </marquee>
+        <br>
+        <br>
+        <h4 class="head1">Result Stays Private</h4>
+        <br>
+        <p class="para0">Using this website you all can admire <br>  and acknowledge in the Job. Pratice <br> Customized mock interview with Al!. <br> Get AI answers,tips 
+             and insights. <br> This Tophire will provide you a great <br> knowledge in the Job placements field.</p>
+        <br>
+        <button class="adsbut">View details</button>
+        <img  class="imgx" src="logo-bg.png" alt="" width="200px" height="200px">
+        <img class="img2" src="imga bg.png" alt="" width="200px" height="200px">
+
+    </div>
+    <br><br><br><br><br>
+    <h1 class="wrap">Trending on Top hire company</h1>
+    <br><br>
+    <div class="main">
+        <div class="main115">
+            <div class="mnc">
+                <h1 class="he1"><a href="mnc.html"> MNC </a></h1>
+                <p class="pa1">88.5k+ jobs</p>
+            </div>
+        </div>
+        <div class="main125">
+            <div class="marketing">
+                <h1 class="he2"><a href="marketing.html"> Marketing </a></h1>
+                <p class="pa2">105.8k+ jobs</p>
+            </div>
+        </div>
+        <div class="main135">
+            <div class="software">
+                <h1 class="he3"> <a href="software.html"> Software and IT </a></h1>
+                <p class="pa3">256.8k+ jobs</p>
+            </div>
+        </div>
+        <div class="main145">
+            <div class="startup">
+                <h1 class="he4"> <a href="startup.html"> Startup </a></h1>
+                <p class="pa4">193.3k+ jobs</p>
+            </div>
+        </div>
+        <div class="main155">
+            <div class="banking">
+                <h1 class="he5"> <a href="bank.html"> Banking and finance </a></h1>
+                <p class="pa5">148.9k+ jobs</p>
+            </div>
+        </div>
+        <div class="main165">
+            <div class="fresher">
+                <h1 class="he6">  <a href="fresher.html"> Fresher </a></h1>
+                <p class="pa6">286.7k+ jobs</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <h1 class="rel1">Jobs by role</h1>
+    <br><br>
+    <div class="job">
+       <h4 class="jo110">Fullstack Developer (67.7k+)</h4>
+       <h4 class="jo210">Mobile/App Developer (2k+)</h4>
+       <h4 class="jo310">Technical Lead ((11.3k+)) </h4>
+       <h4 class="jo410">UI/UX Designer(1.2k+)</h4>
+       <h4 class="jo510">Construction/Site supervisor (1.4k+)</h4>
+       <h4 class="jo610">Reaserach Associate/Engineer(506)</h4>
+       <h4 class="jo710">Branch Manager(294)</h4>
+       <h4 class="jo810">Engineering Manager(11.5k+)</h4>
+       <h4 class="jo910">Develop's Manager(34.5k+)</h4>
+       <h4 class="jo13">Data Scientist(897)</h4>
+       <h4 class="jo23">Functional Consultant(3.5k+)</h4>
+       <h4 class="jo33">Public Relations(56.5k+)</h4>
+    </div>
+    <br><br><br>
+    <div class="contact">
+        <h2 class="q1">Connect with us</h2>
+        <br><br>
+        <span class="sp">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        </span>
+        <br><br>
+        <br><br><br>
+        <div class="sub">
+            <div class="sub1">
+                <h3 class="ly1">LEARN MORE</h3>
+                <ul class="tr">
+                    <li>Announcements</li>
+                    <li>Info Edge Stock</li>
+                    <li>Our Business</li>
+                    <li>Press Releases</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3 class="ly2">Infoedge Stock</h3>
+                <ul class="tr1">
+                    <li>7729.05 <span>  +58 <br>0.76% change</span></li>
+                    <li>Market opened at        7825.00</li>
+                    <li>Daily High              7830.00</li>
+                    <li>Daily Low               7692.80</li>
+                </ul>
+            </div>
+            <div class="sub3">
+                <h3 class="ly3">Press Releases</h3>
+                <ul class="tr2">
+                    <li>Info edge limited announce Q3 FY16 results</li>
+                    <li>Info edge limited announces Q2 results</li>
+                    <li>Info edge limited announces Q3 FY21 results</li>
+                    <li>Info edge limited announces Q2 FY21 results</li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

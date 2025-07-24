@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tophire.com</title>
+    <link rel="icon" href="logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url(bg1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.user{
+    width: 420px;
+    background:transparent;
+    border: 2px solid black;
+    color: #040404;
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+.user h1{
+    font-size: 36px;
+    text-align: center;   
+}
+.user .first{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 36px 0;
+}
+.first input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #0c0c0c;
+    padding: 20px 45px 20px 20px;
+}
+.first input::placeholder{
+    color: #000000;
+}
+.first i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+.user .second{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px o 15px;
+}
+.second label input{
+    accent-color: #000000;
+    margin-right: 3px;
+}
+.second a{
+    color: #020202;
+    text-decoration: none;
+}
+.second a:hover{
+    text-decoration: underline;
+}
+.user .btn{
+    width: 100%;
+    height: 45px;
+    background: #0c0c0c;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0 0 0 .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.user .third{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.third p a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+.third p a:hover{
+    text-decoration: underline;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+    </style>
+</head>
+<body>
+<div class="user">
+    <form action="">
+        <h1>LOGIN</h1>
+        <div class="first">
+            <input type="text" placeholder="username" required>
+            <i class='bx bxs-user'></i>
+        </div>
+        <div class="first">
+            <input type="password" placeholder="password" required>
+            <i class='bx bxs-lock-alt' ></i>
+        </div>
+        <div class="second">
+            <label><input type="checkbox">REMEMBER ME</label>
+            <a href="#">Forget password</a>
+        </div>
+        <button type="submit" class="btn"><a href="home.html">LOGIN</a></button>
+        <div class="third">
+            <p>Don't have an account?<a href="#">Register</a></p>
+        </div>
+    </form>
+</div>
+</body>
+</html>
